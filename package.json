@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest --testPathPattern=src/test"
   },
   "keywords": [],
   "author": "",
