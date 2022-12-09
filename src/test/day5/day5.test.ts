@@ -93,7 +93,6 @@ describe("Setup", () => {
  });
 });
 
-describe("Part 1", () => {
  it("Applies stacks to sample data", async () => {
   const solver = new DayFiveSolver(sampleData, sampleCrates)
   solver.format()
@@ -113,26 +112,15 @@ describe("Part 1", () => {
   const solver = new DayFiveSolver(realData, initialCrates)
   solver.format()
 
-  expect(solver.applyStack(false)).toEqual(expect.any(Object))
-  expect(solver.getTopStacks()).toEqual("SHMSDGZVC")
- });
-});
-
- describe("Part 2", () => {
-  it("Uses CrateMover 9001 for sample data", async () => {
-   console.log("SAMPLE DATA", sampleData)
-   console.log("SAMPLE CRATES", sampleCrates)
-   const sampleSolver = new DayFiveSolver(sampleData, sampleCrates)
-   sampleSolver.format()
- 
-   expect(sampleSolver.applyStack(true)).toEqual(expect.any(Object))
-   expect(sampleSolver.getTopStacks()).toEqual("MCD")
-
-   const solver = new DayFiveSolver(realData, initialCrates)
-   solver.format()
- 
+  let partTwoFlag = true
+  if (partTwoFlag) {
+   // Part two
    expect(solver.applyStack(true)).toEqual(expect.any(Object))
    expect(solver.getTopStacks()).toEqual("VRZGHDFBQ")
-  });
+  } else {
+   // Part one
+   expect(solver.applyStack(false)).toEqual(expect.any(Object))
+   expect(solver.getTopStacks()).toEqual("SHMSDGZVC")
+  }
  });
 });
