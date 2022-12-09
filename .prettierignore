@@ -2,3 +2,8 @@
 dist
 # Build output
 node_modules/
+
+.eslintrc.json
+.prettierrc.js
+jest.config.js
+tsconfig.json

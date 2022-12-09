@@ -1,10 +1,9 @@
 export class Solver {
- readonly rawData: any
- formattedData: any
+  readonly rawData: any
+  formattedData: any
 
- constructor(rawData: any) {
-   this.rawData = rawData
-   this.formattedData = []
- }
- 
+  constructor(rawData: any) {
+    this.rawData = rawData
+    this.formattedData = []
+  }
 }

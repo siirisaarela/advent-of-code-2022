@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --testPathPattern=src/test/",
-    "lint": "eslint . && prettier --check ."
+    "lint": "eslint . && prettier --check .",
     "format": "prettier --write ."
   },
   "keywords": [],
