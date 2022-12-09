@@ -112,7 +112,7 @@ describe("Setup", () => {
   const solver = new DayFiveSolver(realData, initialCrates)
   solver.format()
 
-  let partTwoFlag = true
+  const partTwoFlag = true
   if (partTwoFlag) {
    // Part two
    expect(solver.applyStack(true)).toEqual(expect.any(Object))
